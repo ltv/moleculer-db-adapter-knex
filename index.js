@@ -1,3 +1,7 @@
-"use strict";
+'use strict';
 
-module.exports = require('./src');
+const KnexDbAdapter = require('./src');
+
+module.exports = {
+  KnexDbAdapter
+};

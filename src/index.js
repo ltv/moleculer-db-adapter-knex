@@ -110,6 +110,22 @@ class KnexDbAdapter {
   }
 
   /**
+   * Find entity by query.
+   *
+   *
+   * @param {Object} query
+   * @returns {Promise<Object>}
+   *
+   * @memberof KnexDbAdapter
+   */
+  findOne(query) {
+    return this.db(this.table)
+      .withSchema(this.schema)
+      .where(query)
+      .then(res => res && res[0]);
+  }
+
+  /**
    * Find an entities by ID.
    *
    * @param {String} _id

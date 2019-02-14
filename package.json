@@ -1,6 +1,6 @@
 {
   "name": "moleculer-db-adapter-knex",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Knex adapter for Moleculer DB service.",
   "main": "index.js",
   "repository": "git@github.com:ltv/moleculer-db-adapter-knex.git",
@@ -45,5 +45,6 @@
   "dependencies": {
     "knex": "^0.16.3",
     "moleculer-db": "^0.7.7"
-  }
+  },
+  "types": "index.d.ts"
 }

@@ -18,6 +18,11 @@ class KnexDbAdapter {
     this.schema = 'public';
   }
 
+  instance(withSchema = true) {
+    const mTable = this.db(this.table);
+    return withSchema ? mTable.withSchema(this.schema) : mTable;
+  }
+
   /**
    * Initialize adapter
    *

@@ -1,2 +1,3 @@
 # moleculer-db-adapter-knex
-Knex adapter for Moleculer DB service.
+[WIP] Knex adapter for Moleculer DB service.
+

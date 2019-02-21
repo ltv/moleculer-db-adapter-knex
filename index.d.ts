@@ -7,6 +7,7 @@ declare module 'moleculer-db-adapter-knex' {
     public connect(): Promise<any>;
     public disconnect(): Promise<any>;
     public instance(): Knex;
+    public count(filters?: any): number;
     public find<T = any>(filters?: any): Array<T>;
     public findOne<T = any>(query: any): T;
     public findById<T = any>(id: string | number): T;
